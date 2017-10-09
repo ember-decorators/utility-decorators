@@ -26,7 +26,7 @@ export function proto(target, key, desc) {
  *   baz = { prop1: 123 };
  * }
  *
- * class Bar {
+ * class Bar extends Foo {
  *   @merged baz = { prop2: 456 };
  * }
  *
@@ -57,7 +57,7 @@ export function merged(target, key, desc) {
  *   baz = [123];
  * }
  *
- * class Bar {
+ * class Bar extends Foo {
  *   @concatenated baz = [456];
  * }
  *
